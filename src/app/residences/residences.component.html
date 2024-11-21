@@ -1,0 +1,32 @@
+<p>residences works!</p>
+
+<table border="3">
+    <tr>
+<td>id</td>
+<td>name</td>
+<td>adress</td>
+<td>image</td>
+<td>status</td>
+    </tr>
+    <tr *ngFor="let i of listResidences">
+<td>{{i.id}}</td>
+<td>{{i.name}}</td>
+<td>{{i.address}}</td>
+<td><img [src]="i.image" alt="" height="100" width="100"></td>
+<td>{{i.status}}</td>
+    </tr>
+
+</table>
+<!--Houssem Rachdi-->
+<input type="text" [(ngModel)]="searchname">
+{{searchname}}
+<div *ngFor="let i of listResidences">
+    <div *ngIf="searchname==i.name">
+<ul>
+    <li>{{i.name}}</li>
+    <li>{{i.address}}</li>
+    <li>{{i.status}}</li>
+</ul>
+    </div>
+
+</div>
