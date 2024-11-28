@@ -1,6 +1,6 @@
 <p>residences works!</p>
 
-<table border="3">
+<!--<table border="3">
     <tr>
 <td>id</td>
 <td>name</td>
@@ -17,7 +17,7 @@
     </tr>
 
 </table>
-<!--Houssem Rachdi-->
+<!--Houssem Rachdi--
 <input type="text" [(ngModel)]="searchname">
 {{searchname}}
 <div *ngFor="let i of listResidences">
@@ -29,4 +29,18 @@
 </ul>
     </div>
 
+</div>-->
+<label for="">Recherche</label>
+<input type="text" [(ngModel)]="searchname">
+<div class="row">
+<div *ngFor="let i of searchbyname()" class="card m-3" style="width: 18rem;">
+    <img [src]="i.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{i.name}}</h5>
+      <h5 class="card-title">{{i.address}}</h5>
+      <p class="card-text">{{i.status}}</p>
+      <button class="btn btn-primary" (click)="showalertinconnu(i)">show alert</button>
+      <button class="btn btn-outline-primary" (click)="addtofavorie(i)">{{isverif(i) ? "unlike" : "like"}}</button>
+    </div>
+  </div>
 </div>
