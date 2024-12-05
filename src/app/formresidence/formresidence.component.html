@@ -1,0 +1,52 @@
+<p>formresidence works!</p>
+<div class="container">
+<form [formGroup]="residenceform">
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Id</span>
+        </div>
+        <input type="text" aria-label="First name" class="form-control" formControlName="id">
+        
+      </div>
+      <br>
+      <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">name</span>
+      </div>
+      <input type="text" aria-label="First name" class="form-control" formControlName="name">
+      
+    </div>
+    <br>
+    <div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text">address</span>
+      </div>
+      <input type="text" aria-label="First name" class="form-control" formControlName="address">
+      
+    </div>
+    <br>
+    <div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text">Image</span>
+      </div>
+      <input type="text" aria-label="First name" class="form-control" formControlName="image">
+      
+    </div>
+    <br>
+    <div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text">status</span>
+      </div>
+      <input type="text" aria-label="First name" class="form-control" formControlName="status">
+      
+    </div>
+  
+
+<button class="btn btn-primary" (click)="add()">Save</button>
+
+
+
+</form>
+
+</div>
