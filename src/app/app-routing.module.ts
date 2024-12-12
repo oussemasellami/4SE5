@@ -8,6 +8,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { FormresidenceComponent } from './formresidence/formresidence.component';
 import { UpdateComponent } from './update/update.component';
 import { UpdatenewComponent } from './updatenew/updatenew.component';
+import { DetailsComponent } from './details/details.component';
 
 const routes:Routes=[
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -18,6 +19,7 @@ const routes:Routes=[
   {path:'newss/:id',component:NewsComponent},
   {path:'update/:id',component:UpdateComponent},
   {path:'updatenew/:id',component:UpdatenewComponent},
+  {path:'details/:id',component:DetailsComponent},
 
 ]
 

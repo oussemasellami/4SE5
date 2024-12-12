@@ -18,6 +18,7 @@ import { FormresidenceComponent } from './formresidence/formresidence.component'
 import { HttpClientModule } from '@angular/common/http';
 import { UpdateComponent } from './update/update.component';
 import { UpdatenewComponent } from './updatenew/updatenew.component';
+import { DetailsComponent } from './details/details.component';
 
 
 
@@ -34,6 +35,7 @@ import { UpdatenewComponent } from './updatenew/updatenew.component';
     FormresidenceComponent,
     UpdateComponent,
     UpdatenewComponent,
+    DetailsComponent,
   
   ],
   imports: [

@@ -53,6 +53,9 @@
       <button class="btn btn-danger" (click)="delete(i.id)">
         Delete
       </button>
+      <button class="btn btn-success" [routerLink]="['/details',i.id]">
+        Details
+      </button>
     </div>
   </div>
 </div>
