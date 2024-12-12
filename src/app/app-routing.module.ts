@@ -6,6 +6,8 @@ import { ResidencesComponent } from './residences/residences.component';
 import { NewsComponent } from './news/news.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { FormresidenceComponent } from './formresidence/formresidence.component';
+import { UpdateComponent } from './update/update.component';
+import { UpdatenewComponent } from './updatenew/updatenew.component';
 
 const routes:Routes=[
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -14,6 +16,8 @@ const routes:Routes=[
   {path:'news',component:NewsComponent},
   {path:'newresidence',component:FormresidenceComponent},
   {path:'newss/:id',component:NewsComponent},
+  {path:'update/:id',component:UpdateComponent},
+  {path:'updatenew/:id',component:UpdatenewComponent},
 
 ]
 

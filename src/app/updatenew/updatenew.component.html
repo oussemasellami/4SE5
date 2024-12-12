@@ -1,4 +1,6 @@
-<p>formresidence works!</p>
+<p>updatenew works!</p>
+{{ idp }}
+
 <div class="container">
   <form [formGroup]="residenceform">
     <!--<div class="input-group">
@@ -76,10 +78,10 @@
 
     <button
       class="btn btn-primary"
-      (click)="add()"
-      [disabled]="residenceform!.invalid"
+      (click)="update()"
+     
     >
-      Save
+      update
     </button>
   </form>
 </div>

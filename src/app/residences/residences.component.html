@@ -31,16 +31,31 @@
 
 </div>-->
 <label for="">Recherche</label>
-<input type="text" [(ngModel)]="searchname">
+<input type="text" [(ngModel)]="searchname" />
 <div class="row">
-<div *ngFor="let i of searchbyname()" class="card m-3" style="width: 18rem;">
-    <img [src]="i.image" class="card-img-top" alt="...">
+  <div *ngFor="let i of searchbyname()" class="card m-3" style="width: 18rem">
+    <img [src]="i.image" class="card-img-top" alt="..." />
     <div class="card-body">
-      <h5 class="card-title">{{i.name}}</h5>
-      <h5 class="card-title">{{i.address}}</h5>
-      <p class="card-text">{{i.status}}</p>
-      <button class="btn btn-primary" (click)="showalertinconnu(i)">show alert</button>
-      <button class="btn btn-outline-primary" (click)="addtofavorie(i)">{{isverif(i) ? "unlike" : "like"}}</button>
+      <h5 class="card-title">{{ i.name }}</h5>
+      <h5 class="card-title">{{ i.address }}</h5>
+      <p class="card-text">{{ i.status }}</p>
+      <button class="btn btn-primary" (click)="showalertinconnu(i)">
+        show alert
+      </button>
+
+      <button class="btn btn-success" [routerLink]="['/updatenew',i.id]">
+        Update
+      </button>
+      <br />
+      <button class="btn btn-outline-primary" (click)="addtofavorie(i)">
+        {{ isverif(i) ? "unlike" : "like" }}
+      </button>
+      <button class="btn btn-danger" (click)="delete(i.id)">
+        Delete
+      </button>
     </div>
   </div>
 </div>
+
+<button class="btn btn-primary" (click)="showservice()">show service</button>
+<div>la somme est : {{ somme }}</div>

@@ -15,6 +15,9 @@ import { AnnanceComponent } from './annance/annance.component';
 import { ListAnnanceComponent } from './annance/list-annance/list-annance.component';
 import { AnnanceModule } from './annance/annance.module';
 import { FormresidenceComponent } from './formresidence/formresidence.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UpdateComponent } from './update/update.component';
+import { UpdatenewComponent } from './updatenew/updatenew.component';
 
 
 
@@ -29,6 +32,8 @@ import { FormresidenceComponent } from './formresidence/formresidence.component'
     NewsComponent,
     NotfoundComponent,
     FormresidenceComponent,
+    UpdateComponent,
+    UpdatenewComponent,
   
   ],
   imports: [
@@ -36,7 +41,8 @@ import { FormresidenceComponent } from './formresidence/formresidence.component'
     FormsModule,
     AppRoutingModule,
     AnnanceModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule //import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [],
   bootstrap: [AppComponent]
